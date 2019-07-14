@@ -1,0 +1,14 @@
+---
+title: Labels
+---
+
+<h1>Labels</h1>
+
+<ul>
+    {% for label in site.labels %}
+    <li>
+        <h2><a href="{{ label.url }}">{{ label.name }}</a></h2>
+        <p>{{ label.content | markdownify }}</p>
+    </li>
+    {% endfor %}
+</ul>

@@ -1,0 +1,19 @@
+collections:
+  labels:
+      output: true
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "labels"
+    values:
+      layout: "label"

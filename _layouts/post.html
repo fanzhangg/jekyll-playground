@@ -1,0 +1,15 @@
+---
+layout: default
+title: post
+---
+
+<h1>{{ page.title }}</h1>
+<p>
+    {{page.date | date_to_string}}
+    {% assign label = site.labels | where: 'name', page.label | first %}
+    {% if label %}
+        - <a href="{{ label.url }}">{{ label.name }}</a>
+    {% endif %}
+</p>
+
+{{ content }}
